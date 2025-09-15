@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Gyaan Mitra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Crop Gyaan Mitra</h1>
+    <p>Smart advisory for small & marginal farmers</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Your field details</h2>
+      <label>Location</label>
+      <input type="text" id="location" placeholder="Village / Taluk">
+
+      <label>Crop</label>
+      <select id="crop">
+        <option value="">Select crop</option>
+        <option value="Rice">Rice</option>
+        <option value="Wheat">Wheat</option>
+        <option value="Maize">Maize</option>
+      </select>
+
+      <label>Soil pH (approx)</label>
+      <input type="range" id="ph" min="4" max="9" step="0.1" value="7">
+      <span id="phValue">7</span>
+
+      <div class="buttons">
+        <button id="getAdvisory">Get Advisory</button>
+        <button id="reset">Reset</button>
+      </div>
+    </section>
+
+    <section class="advisory-section">
+      <h2>Advisory</h2>
+      <p id="advisoryText">No advisory yet — enter details and click Get Advisory.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with ❤️ for small & marginal farmers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
